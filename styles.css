@@ -1,0 +1,13 @@
+#banner{
+    background-image: url("./assets/Banner.png");
+    background-size: cover;
+    min-height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+}
+
+#foto{
+    height: calc(100vh - 500px);
+    align-items: center;
+    box-sizing: content-box;
+}

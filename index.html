@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid d-flex">
+            <div>
+                <a class="navbar-brand me-0" href="#">Erick González</a>
+                <span class="navbar-text ms-0">| Desarrollador Java Full Stack</span>
+
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-flex justify-content-end flex-grow-1">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link" href="#aboutMe">Sobre mí</a>
+                    <a class="nav-link" href="#proyects">Proyectos</a>
+                    <a class="nav-link " href="#">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container-fluid d-flex" id="banner">
+            <div class="col-6 text-light ms-5">
+                <h1 class="display-5">Erick Alan González Mora</h1>
+                <h4>Desarrollador Java Full Stack / Matemático</h4>
+                <p class="text-break">Construyo aplicaciones web robustas, escalables usando Java Spring Boot, JavaScript, HTML, CSS, Boostrap</p>
+                <button type="button" class="btn btn-light btn-lg" href="#proyects">Proyectos</button>
+                <button type="button" class="btn btn-danger btn-lg">Contactar</button>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="card mt-3 mb-3 bg-dark text-light col-10 mx-auto" id="aboutMe">
+        <div class="row g-0">
+            <div class="col-md-4 justify-content-center text-center">
+                <img src="./assets/Erick.svg" id="foto" class="img-fluid rounded-start" alt="Erick">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body align-middle">
+                    <h2 class="card-title">Sobre mí</h2>
+                    <p class="card-text text-justify text-wrap">Soy un <strong>Desarrollador Java Full Stack</strong> egresado de Matemáticas por la UNAM, orienté mi carrera hacia el desarrollo y análisis computacional, participando en proyectos de automatización, bases de datos y desarrollo de software en instituciones como UNAM, IMSS, IDS y TCS, la mayoría de las experiencias son en el ámbito bancario. He trabajado con tecnologías como Java, Python, SQL, Oracle, HTML, CSS y JavaScript, destacando por la optimización de procesos y el trabajo colaborativo. Actualmente busco nuevas oportunidades para seguir creciendo profesionalmente y aportar soluciones tecnológicas de alto impacto.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="proyects">
+        <h2 class="text-center mb-5">Proyectos</h2>
+        <div class="card-group col-10 mx-auto">
+            <div class="card bg-dark text-light">
+                <img src="./assets/Fyndr.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fyndr</h5>
+                    <p class="card-text">Plataforma e-commerce que ofrece servicios de profesionales del hogar.</p>
+                    <button type="button" class="btn btn-light btn-lg">Visitar</button>
+                </div>
+            </div>
+            <div class="card bg-dark text-light">
+                <img src="./assets/KungFu.png" class="card-img-top" alt="...">
+                <div class="card-body bg-dark text-light">
+                    <h5 class="card-title">KungFu Shop</h5>
+                    <p class="card-text">Landing Page creado para participar en el Hackaton de Generation</p>
+                    <button type="button" class="btn btn-light btn-lg">Visitar</button>
+                </div>
+            </div>
+            <div class="card bg-dark text-light">
+                <img src="./assets/Mini.png" class="card-img-top" alt="...">
+                <div class="card-body bg-dark text-light">
+                    <h5 class="card-title">Mini Proyecto</h5>
+                    <p class="card-text">Proyecto para manipular el DOM a través de JavaScript</p>
+                    <button type="button" class="btn btn-light btn-lg">Visitar</button>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    <section id="contacto" class="text-center">
+        <h2>Contáctame</h2>
+        <p>En construcción</p>
+    </section>
+
+    <footer class="text-center">
+        <h2>Footer</h2>
+    </footer>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
