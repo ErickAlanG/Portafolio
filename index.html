@@ -11,12 +11,12 @@
 
 </head>
 
-<body class="bg-dark text-light">
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+<body class="text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid d-flex">
             <div>
                 <a class="navbar-brand me-0" href="#">Erick González</a>
-                <span class="navbar-text ms-0">| Desarrollador Java Full Stack</span>
+                <span class="navbar-text ms-0 text-important">| Desarrollador Java Full Stack</span>
 
             </div>
 
@@ -34,93 +34,295 @@
             </div>
         </div>
     </nav>
-    <header>
-        <div class="container-fluid d-flex" id="banner">
-            <div class="col-6 text-light ms-5">
-                <h1 class="display-5">Erick Alan González Mora</h1>
-                <h4>Desarrollador Java Full Stack / Matemático</h4>
-                <p class="text-break">Construyo aplicaciones web robustas, escalables usando Java Spring Boot,
-                    JavaScript, HTML, CSS, Boostrap</p>
-                <a href="#proyects"><button type="button" class="btn btn-light btn-lg">Proyectos</button></a>
-                <a href="#contacto"><button type="button" class="btn btn-danger btn-lg">Contactar</button></a>
-            </div>
 
+    <header class="banner-video">
+        <video autoplay muted loop playsinline>
+            <source src="./assets/banner-video.mp4" type="video/mp4">
+            Tu navegador no soporta video de fondo.
+        </video>
+
+        <div class="container-fluid" id="banner">
+            <div class="row pt-5 pb-4">
+                <div class="col-12 col-md-8 text-light ms-md-5 ps-md-4">
+                    <h1 class="display-5">Erick Alan González Mora</h1>
+                    <h4>Desarrollador Java Full Stack / Matemático</h4>
+                    <p class="text-break lead mb-4 text-important"><strong>Construyo aplicaciones web robustas,
+                            escalables usando Java Spring Boot,
+                            JavaScript, HTML, CSS, Boostrap</strong></p>
+                    <div class="d-flex gap-2">
+                        <a href="#proyects"><button type="button"
+                                class="btn btn-light btn-lg proyectos">Proyectos</button></a>
+                        <a href="#contacto"><button type="button"
+                                class="btn btn-light btn-lg contactar">Contactar</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </header>
 
-    <div class="card mt-3 mb-3 bg-dark text-light col-10 mx-auto" id="aboutMe">
-        <div class="row g-0">
-            <div class="col-md-4 justify-content-center text-center">
-                <img src="./assets/Erick.svg" id="foto" class="img-fluid rounded-start" alt="Erick">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body align-middle">
-                    <h2 class="card-title">Sobre mí</h2>
-                    <p class="card-text text-justify text-wrap">Soy un <strong>Desarrollador Java Full Stack</strong>
-                        egresado de Matemáticas por la UNAM, orienté mi carrera hacia el desarrollo y análisis
-                        computacional, participando en proyectos de automatización, bases de datos y desarrollo de
-                        software en instituciones como UNAM, IMSS, IDS y TCS, la mayoría de las experiencias son en el
-                        ámbito bancario. He trabajado con tecnologías como <strong class="text-danger">Java, Python, SQL, Oracle, SAS, HTML, CSS y
-                        JavaScript</strong>, destacando por la optimización de procesos y el trabajo colaborativo. Actualmente
-                        busco nuevas oportunidades para seguir creciendo profesionalmente y aportar soluciones
-                        tecnológicas de alto impacto.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
+    <div class="container-fluid mt-3">
+        <h2 class="text-center mb-1">Tecnologías</h2>
+        <!-- Carrusel Continuo -->
+        <div class="slider">
+            <div class="slider-track carousel-track align-items-center ">
+                <!-- Grupo de íconos original -->
+                <div class="slider-item"><img class="carousel-img" src="./assets/1.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/2.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/3.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/4.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/5.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/6.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/7.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/8.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/9.svg"></div>
+
+                <!-- Copia exacta del grupo para lograr el efecto infinito -->
+                <div class="slider-item"><img class="carousel-img" src="./assets/1.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/2.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/3.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/4.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/5.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/6.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/7.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/8.svg"></div>
+                <div class="slider-item"><img class="carousel-img" src="./assets/9.svg"></div>
             </div>
         </div>
     </div>
-    <section id="proyects">
-        <h2 class="text-center mb-5">Proyectos</h2>
-        <div class="card-group col-10 mx-auto">
-            <div class="card bg-dark text-light">
-                <img src="./assets/Fyndr.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Fyndr</h5>
-                    <p class="card-text">Plataforma e-commerce que ofrece servicios de profesionales del hogar.</p>
-                    <button type="button" class="btn btn-light btn-lg">Visitar</button>
-                </div>
-            </div>
-            <div class="card bg-dark text-light">
-                <img src="./assets/KungFu.png" class="card-img-top" alt="...">
-                <div class="card-body bg-dark text-light">
-                    <h5 class="card-title">KungFu Shop</h5>
-                    <p class="card-text">Landing Page creado para participar en el Hackaton de Generation</p>
-                    <button type="button" class="btn btn-light btn-lg">Visitar</button>
-                </div>
-            </div>
-            <div class="card bg-dark text-light">
-                <img src="./assets/Mini.png" class="card-img-top" alt="...">
-                <div class="card-body bg-dark text-light">
-                    <h5 class="card-title">Mini Proyecto</h5>
-                    <p class="card-text">Proyecto para manipular el DOM a través de JavaScript</p>
-                    <button type="button" class="btn btn-light btn-lg">Visitar</button>
-                </div>
-            </div>
-        </div>
 
-    </section>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100" ; id="aboutMe">
+
+        <div class="card border-0 text-center p-4 position-relative aboutMe-card">
+
+            <img src="./assets/Erick.png"
+                class="rounded-circle position-absolute top-0 start-50 translate-middle border border-4 foto"
+                alt="Erick Gonzalez">
+
+            <div class="card-body mt-5">
+                <h2 class="card-title text-white fw-bold mt-5 mb-3">Sobre mí</h2>
+                <p class="card-text text-white mb-4">
+                    Soy un <strong>Desarrollador Java Full Stack</strong>
+                    egresado de Matemáticas por la UNAM, orienté mi carrera hacia el desarrollo y análisis
+                    computacional, participando en proyectos de automatización, bases de datos y desarrollo de
+                    software en instituciones como UNAM, IMSS, IDS y TCS, la mayoría de las experiencias son en el
+                    ámbito bancario. He trabajado con tecnologías como <strong class="text-important">Java, Python, SQL,
+                        Oracle, SAS, HTML, CSS y
+                        JavaScript</strong> entre otras, destacando por la optimización de procesos y el trabajo
+                    colaborativo. Actualmente
+                    busco nuevas oportunidades para seguir creciendo profesionalmente y aportar soluciones
+                    tecnológicas de alto impacto.
+                </p>
+                <div class="container" id="aboutMeMas">
+
+                </div>
+
+
+                <button type="button" class="btn btn-light rounded-pill px-4 py-2 btn-conocer btn-lg contactar"
+                    class="bi bi-arrow-right ms-1" data-bs-toggle="modal" data-bs-target="#miPantallaEmergente">
+                    Mostrar más...
+                </button>
+
+                <!-- 2. LA ESTRUCTURA DE LA PANTALLA EMERGENTE (MODAL) -->
+                <div class="modal fade bg-dark w-100" id="miPantallaEmergente" tabindex="-1"
+                    aria-labelledby="modalTitulo" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                        <!-- 'modal-dialog-centered' lo centra verticalmente -->
+                        <div class="modal-content bg-dark w-100">
+                            <div class="container d-flex justify-content-center align-items-center min-vh-100 mt-5 pt-5"
+                                ; id="aboutMe">
+
+                                <div class="card border-0 text-center p-4 position-relative aboutMe-card">
+
+                                    <img src="./assets/Erick.png"
+                                        class="rounded-circle position-absolute top-0 start-50 translate-middle border border-4 foto"
+                                        alt="Erick Gonzalez">
+
+                                    <div class="card-body mt-5">
+                                        <h2 class="card-title text-white fw-bold mt-5 mb-3">Sobre mí</h2>
+                                        <p class="card-text text-white mb-4">
+                                            Soy un <strong>Desarrollador Java Full Stack</strong>
+                                            egresado de Matemáticas por la UNAM, orienté mi carrera hacia el desarrollo
+                                            y análisis
+                                            computacional, participando en proyectos de automatización, bases de datos y
+                                            desarrollo de
+                                            software en instituciones como UNAM, IMSS, IDS y TCS, la mayoría de las
+                                            experiencias son en el
+                                            ámbito bancario. He trabajado con tecnologías como <strong
+                                                class="text-important">Java, Python, SQL,
+                                                Oracle, SAS, HTML, CSS y
+                                                JavaScript</strong> entre otras, destacando por la optimización de
+                                            procesos y el trabajo
+                                            colaborativo. Actualmente
+                                            busco nuevas oportunidades para seguir creciendo profesionalmente y aportar
+                                            soluciones
+                                            tecnológicas de alto impacto.
+                                        </p>
+                                        <div class="container" id="aboutMeMas">
+
+                                            <div class="row">
+                                                <div class="col-6 text-important">
+                                                    <h4>Formación Educativa</h4>
+                                                    <ul class="lista text-white">
+                                                        <li><strong>Licenciatura en Matemáticas</strong> | Universidad
+                                                            Nacional Autónoma de México</li>
+                                                        <li><strong>Bootcamp Desarrollador Java Full Stack</strong> |
+                                                            Generation México</li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-6 text-important">
+                                                    <h4>Habilidades Técnicas</h4>
+                                                    <div class="row text-center text-white">
+
+                                                        <div class="col-4">
+                                                            <ul class="lista">
+                                                                <li><strong>Java</strong></li>
+                                                                <li><strong>SQL</strong></li>
+                                                                <li><strong>SAS</strong></li>
+                                                                <li><strong>Spring Boot</strong></li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="col-4">
+                                                            <ul class="lista">
+                                                                <li><strong>Git/GitHub</strong></li>
+                                                                <li><strong>HTML</strong></li>
+                                                                <li><strong>CSS</strong></li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="col-4">
+                                                            <ul class="lista">
+                                                                <li><strong>JavaScript</strong></li>
+                                                                <li><strong>BootStrap</strong></li>
+                                                                <li><strong>I.A.</strong></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-6 text-important">
+                                                    <h4>Cursos / Certificaciones</h4>
+                                                    <ul class="lista text-white">
+                                                        <li><strong>Introducción a Java</strong> | Accenture</li>
+                                                        <li><strong>Git y GitHub: repositorio, commit y
+                                                                versiones</strong> | Alura Latam</li>
+                                                        <li><strong>HTML5 y CSS3 parte 4: Avanzando en CSS</strong> |
+                                                            Alura Latam</li>
+                                                        <li><strong>Formación Principiante en Programación G6 -
+                                                                ONE</strong> | Alura Latam</li>
+                                                        <li><strong>Formación Lógica de Programación con
+                                                                JavaScript</strong> | Alura Latam</li>
+                                                        <li><strong>Formación Desarrollo Personal G6 - ONE</strong> |
+                                                            Alura Latam</li>
+                                                    </ul>
+                                                </div>
+
+
+
+                                                <div class="col-6 text-important">
+                                                    <h4>Habilidades Blandas</h4>
+                                                    <div class="row text-center text-white">
+                                                        <div class="col-6">
+                                                            <ul class="lista">                                                                
+                                                                <li><strong>Comunicación efectiva</strong></li>
+                                                                <li><strong>Liderazgo</strong></li>
+                                                                <li><strong>Resolución de problemas</strong></li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="col-6">
+                                                            <ul class="lista">
+                                                                <li><strong>Adaptabilidad</strong></li>
+                                                                <li><strong>Proactividad</strong></li>
+                                                                <li><strong>Trabajo en equipo</strong></li>
+                                                            </ul>
+                                                        </div>                                                
+                                                    </div>
+                                                </div>
+                                            </div>`
+
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-secondary rounded-pill px-4 py-2 btn-conocer"
+                                            data-bs-dismiss="modal" class="bi bi-arrow-right ms-1">Mostrar
+                                            menos...</button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<section class="projects-section" id=proyects>
+    <h2 class="text-center mb-5">Proyectos</h2>
+    <div class="container">
+        <div class="projects-slider">
+
+            <div class="project-card">
+                <img src="assets/Fyndr.png" alt="fyndr">
+                <h3>Fyndr (e-commerce)</h3>
+                <p>Plataforma e-commerce que ofrece servicios de profesionales del hogar.</p>
+            </div>
+
+            <div class="project-card" onclick="window.location.href='https://alanhercas.github.io/kungfushop-Hackathon/';">
+                <img src="./assets/KungFu.png" alt="kungFuShop">
+                <h3>Kung Fu Shop (Hackathon)</h3>
+                <p>Landing Page creado para participar en el Hackaton de Generation</p>
+            </div>
+            
+
+            <div class="project-card" onclick="window.location.href='https://erickalang.github.io/Ejercicio-Integral-JS-Fork/producto.html';">
+                <img src="./assets/Mini.png" alt="Workmate">
+                <h3>Mini Proyecto</h3>
+                <p>Proyecto para manipular el DOM a través de JavaScript</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
 
     <section id="contacto" class="text-center mx-auto mt-3">
         <h2>Contáctame</h2>
         <p>¿Quieres comunicarte conmigo? <br>Deja un mensaje, estaré encantado de leerlo.</p>
-        <form class="col-10 mx-auto">
+        <form id="contact-form" class="col-10 mx-auto">
+            <input type="hidden" name="time" value="Mar 10 2025 08:46">
             <div class="mb-3 mt-3 col-5 mx-auto">
                 <label for="name" class="form-label">Nombre:</label>
-                <input type="name" class="form-control" id="name" placeholder="Nombre" name="name">
+                <input type="name" class="form-control" id="name" placeholder="Nombre" name="name" required>
             </div>
             <div class="mb-3 mt-3 col-5 mx-auto">
                 <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="mb-3 mt-3 col-5 mx-auto">
+                <label for="email" class="form-label">Asunto:</label>
+                <input type="text" class="form-control" id="asunto" placeholder="Asunto" name="title" required>
             </div>
             <div class="mb-3 col-5 mx-auto">
                 <label for="comment">Mensaje:</label>
-                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Escribe tu mensaje"></textarea>
+                <textarea class="form-control" rows="5" id="message" name="message"
+                    placeholder="Escribe tu mensaje" required></textarea>
             </div>
-            <button type="submit" class="btn btn-danger btn-lg mb-5">Enviar</button>
+            <button type="submit" class="btn btn-light btn-lg mb-5 contactar" value="Send">Enviar</button>
         </form>
     </section>
 
-    <footer class="container-fluid text-center bg-light">
+    <footer class="container-fluid text-center" id="footer">
         <div class="row">
             <div>
                 <a href="https://github.com/ErickAlanG">GitHub |</a>
@@ -130,7 +332,8 @@
         </div>
     </footer>
 
-
+    <script src="./javascript/main.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
