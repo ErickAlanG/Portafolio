@@ -33,6 +33,10 @@ body{
     border-radius: 15px;
 }
 
+.aboutMe-card:hover{
+    transform:translateY(-10px);
+}
+
 .text-important{
     color: var(--color-destacado);
 }
@@ -50,7 +54,7 @@ body{
 
 .btn-conocer{
     background-color: var(--color-interactivo);
-    border: none;
+    border: 1px white solid;
 }
 
 #banner{
@@ -88,6 +92,9 @@ body{
     top: 30%; /* Ajusta la posición vertical de tu contenido */
 }
 
+.tec{
+    background-color: var(--color-interactivo);
+}
 
 
 /* Contenedor principal que oculta lo que sale de los bordes */
@@ -212,6 +219,23 @@ body{
 
 .project-card{
     scroll-snap-align:center;
+}
+
+#redes{
+    background-color: var(--color-interactivo);
+    height: 500px;
+    
+}
+
+.icono_redes:hover{
+    transform:translateY(-10px);
+    cursor: pointer;
+}
+
+.icono_redes{
+    height: 150px;       /* Ajusta el ALTO que tú quieras aquí */
+    width: 150px;
+    object-fit: contain;
 }
 
 #footer{

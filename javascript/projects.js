@@ -8,7 +8,7 @@ export function desplazar() {
 
     slider.addEventListener('wheel', (e) => {
         e.preventDefault();
-        slider.scrollLeft += e.deltaY * 3;
+        slider.scrollLeft += e.deltaY * 4;
     });
 }
 
