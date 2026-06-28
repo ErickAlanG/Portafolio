@@ -25,6 +25,7 @@ body{
 
 #aboutMe{
     background-color: transparent !important;
+    margin-top: 100px;
 }
 
 .aboutMe-card{
@@ -33,9 +34,10 @@ body{
     border-radius: 15px;
 }
 
-.aboutMe-card:hover{
-    transform:translateY(-10px);
+.titulo-card{
+    color: var(--color-destacado);
 }
+
 
 .text-important{
     color: var(--color-destacado);
@@ -147,9 +149,10 @@ body{
 }
 
 .lista{
-    display: inline-block;
+   
     text-align: left;
     list-style-position: inside;
+    color: var(--color-acento);
 }
 
 
